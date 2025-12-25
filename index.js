@@ -1,5 +1,17 @@
 module.exports = {
   "rules": {
+    "property-no-unknown": [
+      true,
+      {
+        ignoreProperties: [
+          "aspect-ratio",
+          "scrollbar-width",
+          "scrollbar-color",
+          "container-type",
+          "container-name"
+        ]
+      }
+    ]
     "comment-empty-line-before": "never",
     "selector-type-no-unknown": null,
     "font-family-no-missing-generic-family-keyword": null,
